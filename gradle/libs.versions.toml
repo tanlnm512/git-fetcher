@@ -118,3 +118,4 @@ lifecycle = ["livedata-core-ktx", "livedata-ktx", "viewmodel-ktx", "viewmodel-sa
 room = ["room-runtime", "room-ktx"]
 navigation = ["nav-runtime", "nav-fragment", "nav-ui", "nav-feature"]
 koin = ["koin-core", "koin-android", "koin-workmanager", "koin-navigation", "koin-app-startup"]
+network = ["retrofit", "retrofit-converter-gson", "okhttp", "okhttp-url-connection", "okhttp-logging-interceptor"]

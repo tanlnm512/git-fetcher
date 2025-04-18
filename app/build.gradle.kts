@@ -18,6 +18,7 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField("String", "API_URL", "\"https://api.github.com/\"")
     }
 
     buildTypes {
@@ -64,6 +65,9 @@ dependencies {
     ksp(libs.room.compiler)
 
     implementation(libs.bundles.navigation)
+
+    implementation(platform(libs.okhttp.bom))
+    implementation(libs.bundles.network)
 
     implementation(libs.coil)
     implementation(libs.coil.network)
